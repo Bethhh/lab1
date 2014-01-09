@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Solitaire</title>
+	<style>
+		h1{
+			color:red;
+		}
+		h4 {
+			text-decoration: underline;
+		}
+		body {
+			width:700px;
+			margin-left:auto;
+			margin-right:auto;
+			padding:10px;
+			border:2px black solid;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- this is a comment in HTML -->
+	<h1>Solitaire -- Card Game</h1> <!-- h1 through h5 are headers. The higher the number, the smaller the header -->
+	<h4>Description</h4>
+
+	<!-- p means paragraph -->
+	<p>I am working on my own Java app Solitaire in order to apply the knowledge I learned in class to real world. I create Clubs, Hearts, Diamonds and Spades, make them extend superclass Card to inherit all the properties/methods from Card, but they use different pictures and static counters. In Card, I have boolean variables to determine if card is hidden or on the top. The Card and SolitaireController classes implement mouse listeners and have move/drag methods to allow user to interact with cards. In SolitaireController, in order to randomly generate cards, I randomly select a number as priority of the card and add the card to a PriorityQueue each time I create cards in loop. Then I remove the card with highest priority from PriorityQueue one by one, place them on different locations in different piles and connect each pile’s cards as a LinkedList. Then user can drag one or multiple non-hidden cards from a pile to another pile. Whether the dragged card can connect to another pile’s top card depends on the color and number of both non-hidden cards, which is a method in Card.</p>
+
+	<h4>ScreenShot</h4>
+	<img src="./32813.png" width=700 >
+	<img src="./3313.png"  width=700 >
+
+	<h4>Future Direction</h4>
+	<ol>
+		<li>Android</li>
+		<li>Refactor</li>
+		<li>GUI</li>
+		<li>Game Options</li>
+	</ol>
+
+	<h5><a href="./index.html">Back</a></h5>
+
+</body>
+</html>
